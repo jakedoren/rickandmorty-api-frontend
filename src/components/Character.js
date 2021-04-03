@@ -22,17 +22,17 @@ const Character = () => {
     return (
       <div className="character-container">
         <div className="name-wrap">
-            {apiData ? <h1> {apiData.data[current].name} </h1> : null}
+            {apiData ? <h1> {apiData.data[current].name} </h1> : 'loading...'}
         </div>
         <div className='img-wrap'>
-          {apiData ? <img className="img" src={apiData.data[current].image} /> : null}
+          {apiData ? <img className="img" src={apiData.data[current].image} /> : 'loading...'}
         </div>
         <div className='quote-wrap'>
           {apiData ? 
           <div className="quote-button-wrap">
            <p>"{apiData.data[current].quote}"</p> 
            <button className="character-btn" onClick={updateQuote}>Next Character</button>
-          </div> : null}
+          </div> : 'loading...'}
         </div>
       </div> 
     )
