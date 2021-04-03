@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Mitr&display=swap");
+
+:root,
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mitr";
+}
+
+.App {
+  height: 100%;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(43, 42, 42);
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Audiowide";
+}
+
+p {
+  margin: 0;
+  font-family: "Mitr";
+}
+
+button {
+  font-family: "Audiowide";
+}
